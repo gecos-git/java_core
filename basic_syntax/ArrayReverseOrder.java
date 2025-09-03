@@ -4,16 +4,15 @@ import java.util.Random;
 public class ArrayReverseOrder {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
         
         System.out.println("Введите размер массива: ");
         int size = scanner.nextInt();
 
         int[] array = new int[size];
 
-        System.out.println("Введите элементы массива: ");
         for (int i = 0; i < size; i++) {
-            System.out.print("Элемент " + (i + 1) + ": ");
-            array[i] = scanner.nextInt();
+            array[i] = random.nextInt(100);
         }
 
         System.out.println("\nИсходный массив:");
